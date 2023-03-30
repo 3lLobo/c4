@@ -1,15 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Gowun_Dodum, Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import LangChoice from '@/components/LangChoice'
 import { useState } from 'react'
 import { Typography } from '@mui/material'
+import { ArtTrack } from '@mui/icons-material'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [lang, setLang] = useState('python')
+  const [lang, setLang] = useState('')
 
   return (
     <>
@@ -36,9 +37,10 @@ export default function Home() {
             <span
               className='text-3xl text-sky-300 w-40 justify-center uppercase'
             >
-              {lang}
+              {lang || 'Choose your weapon'}
             </span>
           </Typography>
+          <ArtTrack className='mt-11 text-3xl text-sky-300 ' />
           <div
             className='mt-20'
           >

@@ -6,7 +6,6 @@ const LANGUAGES = ['pyhton', 'typescript', 'bash', 'powershell', 'java', 'ruby']
 export default function LangChoice({ lang, setLang }) {
 
   const handleChange = (event) => {
-    console.warn("event", event)
     setLang(event.target.value)
   }
 
