@@ -1,7 +1,7 @@
 import { Button, ButtonGroup, FormControl, Input, Tab } from "@mui/material"
 
 
-const LANGUAGES = ['pyhton', 'typescript', 'bash', 'powershell', 'java', 'ruby']
+const LANGUAGES = ['python', 'typescript', 'bash', 'powershell', 'java', 'ruby']
 
 export default function LangChoice({ lang, setLang }) {
 
